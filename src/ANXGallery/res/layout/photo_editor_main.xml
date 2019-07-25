@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/activity_main" android:background="@color/photo_editor_window_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/display_panel" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/display_height" app:layout_constraintBottom_toBottomOf="@id/menu_panel_line" app:layout_constraintTop_toTopOf="parent" />
+    <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/menu_panel_line" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="@dimen/editor_menu_height" />
+    <FrameLayout android:id="@id/menu_panel" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="@id/menu_panel_line" />
+</android.support.constraint.ConstraintLayout>

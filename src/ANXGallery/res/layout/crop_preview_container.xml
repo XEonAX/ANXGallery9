@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/photo_editor_window_bg" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.gallery.editor.photo.core.imports.obsoletes.EditorView android:id="@id/editor_view" android:paddingTop="@dimen/render_view_margin_top" android:paddingBottom="@dimen/render_view_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/editor_menu_crop_rotate_crop_padding_start" android:paddingEnd="@dimen/editor_menu_crop_rotate_crop_padding_end" />
+    <TextView android:textSize="@dimen/crop_tips_text_size" android:textColor="@color/crop_rotate_label_color" android:gravity="center" android:id="@id/crop_tips" android:background="@drawable/crop_tips_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/crop_tips_height" android:layout_marginBottom="@dimen/crop_tips_bottom_margin" android:text="@string/photo_editor_crop_auto_tips" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingStart="@dimen/crop_tips_horizontal_margin" android:paddingEnd="@dimen/crop_tips_horizontal_margin" />
+</RelativeLayout>

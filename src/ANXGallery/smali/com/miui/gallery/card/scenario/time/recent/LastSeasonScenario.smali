@@ -1,0 +1,258 @@
+.class public Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;
+.super Lcom/miui/gallery/card/scenario/time/TimeScenario;
+.source "LastSeasonScenario.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    const/16 v0, 0x6c
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x6
+
+    invoke-direct {p0, v0, v1, v2}, Lcom/miui/gallery/card/scenario/time/TimeScenario;-><init>(III)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public generateDescription(Lcom/miui/gallery/card/scenario/Record;Ljava/util/List;)Ljava/lang/String;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/miui/gallery/card/scenario/Record;",
+            "Ljava/util/List<",
+            "Lcom/miui/gallery/assistant/model/MediaFeatureItem;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->getRecordStartTime(Lcom/miui/gallery/card/scenario/Record;)J
+
+    move-result-wide v0
+
+    const-wide/16 v2, 0x0
+
+    cmp-long p2, v0, v2
+
+    if-lez p2, :cond_0
+
+    invoke-virtual {p0, p1}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->getMonthPeriodFromRecord(Lcom/miui/gallery/card/scenario/Record;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_0
+    const-string p1, ""
+
+    return-object p1
+.end method
+
+.method public generateTitle(Lcom/miui/gallery/card/scenario/Record;Ljava/util/List;)Ljava/lang/String;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/miui/gallery/card/scenario/Record;",
+            "Ljava/util/List<",
+            "Lcom/miui/gallery/assistant/model/MediaFeatureItem;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->getRecordStartTime(Lcom/miui/gallery/card/scenario/Record;)J
+
+    move-result-wide p1
+
+    const-wide/16 v0, 0x0
+
+    cmp-long v2, p1, v0
+
+    if-lez v2, :cond_0
+
+    invoke-static {p1, p2}, Lcom/miui/gallery/card/scenario/DateUtils;->getSeason(J)I
+
+    move-result p1
+
+    invoke-static {}, Lcom/miui/gallery/GalleryApp;->sGetAndroidContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p2
+
+    const v0, 0x7f020015
+
+    invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object p2
+
+    array-length v0, p2
+
+    if-lez v0, :cond_0
+
+    array-length v0, p2
+
+    if-le v0, p1, :cond_0
+
+    aget-object p1, p2, p1
+
+    return-object p1
+
+    :cond_0
+    const-string p1, ""
+
+    return-object p1
+.end method
+
+.method public loadMediaItem()Ljava/util/List;
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+
+    sget-object v0, Lcom/miui/gallery/card/scenario/ScenarioConstants;->TAGS_PARTY:[Ljava/lang/Integer;
+
+    sget-object v1, Lcom/miui/gallery/card/scenario/ScenarioConstants;->TAGS_FOODS:[Ljava/lang/Integer;
+
+    invoke-static {v0, v1}, Lcom/miui/gallery/card/CardUtil;->concat([Ljava/lang/Integer;[Ljava/lang/Integer;)[Ljava/lang/Integer;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/miui/gallery/card/scenario/ScenarioConstants;->TAGS_ACTIVITY:[Ljava/lang/Integer;
+
+    sget-object v2, Lcom/miui/gallery/card/scenario/ScenarioConstants;->TAGS_SPORTS:[Ljava/lang/Integer;
+
+    invoke-static {v1, v2}, Lcom/miui/gallery/card/CardUtil;->concat([Ljava/lang/Integer;[Ljava/lang/Integer;)[Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/miui/gallery/card/CardUtil;->concat([Ljava/lang/Integer;[Ljava/lang/Integer;)[Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {p0}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->getStartTime()J
+
+    move-result-wide v4
+
+    invoke-virtual {p0}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->getEndTime()J
+
+    move-result-wide v6
+
+    move-object v2, p0
+
+    invoke-virtual/range {v2 .. v7}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->getCameraMediaIdsByStartEndTimeTags([Ljava/lang/Integer;JJ)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->getImageIdsFromImageFeatures(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public onPrepare(Ljava/util/List;Ljava/util/List;)Z
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/miui/gallery/card/scenario/Record;",
+            ">;",
+            "Ljava/util/List<",
+            "Lcom/miui/gallery/card/Card;",
+            ">;)Z"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p1, p2, v0}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->getRecordStartTimesFromRecordAndCards(Ljava/util/List;Ljava/util/List;Z)Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-static {}, Lcom/miui/gallery/card/scenario/DateUtils;->getCurrentTimeMillis()J
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Lcom/miui/gallery/card/scenario/DateUtils;->getSeasonStartTime(J)J
+
+    move-result-wide v3
+
+    cmp-long p2, v1, v3
+
+    if-lez p2, :cond_2
+
+    sub-long/2addr v1, v3
+
+    const-wide/32 v5, 0xa4cb800
+
+    cmp-long p2, v1, v5
+
+    if-gez p2, :cond_2
+
+    const-wide/32 v1, 0x5265c00
+
+    sub-long/2addr v3, v1
+
+    invoke-static {v3, v4}, Lcom/miui/gallery/card/scenario/DateUtils;->getSeasonStartTime(J)J
+
+    move-result-wide v1
+
+    invoke-static {v3, v4}, Lcom/miui/gallery/card/scenario/DateUtils;->getSeasonEndTime(J)J
+
+    move-result-wide v3
+
+    const-wide/16 v5, 0x0
+
+    cmp-long p2, v1, v5
+
+    if-ltz p2, :cond_1
+
+    cmp-long p2, v3, v5
+
+    if-ltz p2, :cond_1
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p2
+
+    invoke-interface {p1, p2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0, v1, v2}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->setStartTime(J)V
+
+    invoke-virtual {p0, v3, v4}, Lcom/miui/gallery/card/scenario/time/recent/LastSeasonScenario;->setEndTime(J)V
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_1
+    :goto_0
+    return v0
+
+    :cond_2
+    return v0
+.end method

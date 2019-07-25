@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pagerIndicator="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.miui.gallery.widget.PagerIndicator android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" pagerIndicator:circle_radius="@dimen/burst_preview_pager_indicator_size" pagerIndicator:circle_spacing="0.0dip" pagerIndicator:selected_color="@color/burst_preview_pager_indicator_color" />
+        <com.miui.gallery.widget.recyclerview.GalleryRecyclerView android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="@dimen/burst_preview_height" android:layout_marginTop="@dimen/burst_preview_pager_margin_top" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/burst_preview_action_paddind_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="start" android:id="@id/discard" android:layout_width="@dimen/burst_preview_action_button_size" android:layout_height="@dimen/burst_preview_action_button_size" android:src="@drawable/burst_menu_button_discard" android:scaleType="center" android:contentDescription="@android:string/cancel" android:layout_marginStart="@dimen/burst_preview_action_button_left_margin" />
+        <TextView android:textSize="@dimen/burst_preview_title_size" android:textColor="@color/burst_preview_title_color" android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/burst_preview_title_padding_top" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/burst_preview_title" android:layout_weight="1.0" android:paddingStart="@dimen/burst_preview_title_padding_start" />
+        <ImageView android:enabled="false" android:layout_gravity="end" android:id="@id/save" android:layout_width="@dimen/burst_preview_action_button_size" android:layout_height="@dimen/burst_preview_action_button_size" android:src="@drawable/burst_menu_button_save" android:scaleType="center" android:contentDescription="@string/operation_save" android:layout_marginEnd="@dimen/burst_preview_action_button_right_margin" />
+    </LinearLayout>
+</LinearLayout>

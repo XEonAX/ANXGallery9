@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/head_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.gallery.editor.photo.widgets.TouchTransLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/editor_menu_crop_rotate_label_text_size" android:textColor="@color/crop_rotate_label_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/photo_editor_rotate" android:layout_marginStart="@dimen/editor_menu_crop_rotate_label_text_margin_start" />
+        <com.miui.gallery.editor.photo.widgets.seekbar.BiDirectionSeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.miui.gallery.editor.photo.widgets.TouchTransLinearLayout>
+</android.support.constraint.ConstraintLayout>

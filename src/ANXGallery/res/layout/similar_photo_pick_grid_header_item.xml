@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.gallery.ui.SimilarPhotoPickGridHeaderItem android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/cleaner_divider" android:layout_width="fill_parent" android:layout_height="@dimen/similar_photo_pick_divider_height" />
+    <TextView android:textSize="@dimen/similar_photo_pick_header_size" android:textColor="@color/similar_photo_pick_header_color" android:gravity="center_vertical" android:id="@id/create_time" android:background="@color/similar_photo_pick_header_background" android:layout_width="fill_parent" android:layout_height="@dimen/similar_photo_pick_header_height" android:textDirection="locale" android:paddingStart="@dimen/similar_photo_pick_header_padding_start" />
+</com.miui.gallery.ui.SimilarPhotoPickGridHeaderItem>

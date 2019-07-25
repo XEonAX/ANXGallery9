@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black_15_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/photo_editor_preview_stroke_width" />
+    <com.miui.gallery.editor.photo.widgets.seekbar.BasicSeekBar android:layout_gravity="center" android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="@dimen/screen_editor_mosaic_menu_top_height" android:layout_marginStart="@dimen/screen_editor_mosaic_menu_seekbar_horizontal_margin" android:layout_marginEnd="@dimen/screen_editor_mosaic_menu_seekbar_horizontal_margin" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/screen_editor_mosaic_menu_horizontal_margin" android:paddingEnd="@dimen/screen_editor_mosaic_menu_horizontal_margin">
+        <com.miui.gallery.editor.photo.widgets.recyclerview.SimpleRecyclerView android:id="@id/preview_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

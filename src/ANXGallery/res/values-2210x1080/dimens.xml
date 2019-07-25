@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="beautyedit_beauty_compare_margin_right">98.0px</dimen>
+    <dimen name="beautyedit_beauty_compare_margin_top">331.0px</dimen>
+    <dimen name="crop_tips_bottom_margin">170.0px</dimen>
+    <dimen name="movie_bottom_height">147.0px</dimen>
+    <dimen name="movie_controller_height">538.0px</dimen>
+    <dimen name="movie_tab_height">147.0px</dimen>
+    <dimen name="photo_editor_navigator_bottom_margin">43.5px</dimen>
+    <dimen name="photo_editor_navigator_text_button_height">158.0px</dimen>
+    <dimen name="photo_editor_preview_padding">42.0px</dimen>
+    <dimen name="photo_editor_preview_padding_top">122.0px</dimen>
+    <dimen name="video_editor_preview_padding">42.0px</dimen>
+    <dimen name="video_editor_preview_padding_top">122.0px</dimen>
+</resources>

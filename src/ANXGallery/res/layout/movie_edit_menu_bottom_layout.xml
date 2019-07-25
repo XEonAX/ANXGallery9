@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/divide_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/movie_divide_height" android:layout_marginBottom="@dimen/photo_movie_edit_divide_bottom_margin_end" app:layout_constrainedHeight="true" layout="@layout/movie_divide" />
+    <TextView android:textSize="@dimen/photo_movie_edit_bottom_btn_size" android:textColor="@color/movie_tab_normal" android:id="@id/btn_movie_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movie_return" android:layout_marginStart="@dimen/photo_movie_edit_btn_movie_return_margin_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/duration_group_controller" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <RadioButton android:id="@id/radio_button_video_short" android:layout_width="@dimen/movie_editor_time_item_width" android:checked="true" android:minWidth="@dimen/movie_editor_time_item_min_width" android:text="@string/movie_video_short" style="@style/smallMovieRadioButton" />
+        <RadioButton android:id="@id/radio_button_video_long" android:layout_width="@dimen/movie_editor_time_item_width" android:minWidth="@dimen/movie_editor_time_item_min_width" android:text="@string/movie_video_long" style="@style/smallMovieRadioButton" />
+    </RadioGroup>
+    <TextView android:textSize="@dimen/photo_movie_edit_bottom_btn_size" android:textColor="@color/movie_tab_normal" android:id="@id/btn_movie_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movie_save" android:layout_marginEnd="@dimen/photo_movie_edit_btn_movie_return_margin_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

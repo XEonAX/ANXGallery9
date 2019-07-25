@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/similar_page_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/similar_keep_clear_layout_height" android:paddingStart="@dimen/similar_keep_clear_layout_padding_start" android:paddingEnd="@dimen/similar_keep_clear_layout_padding_end">
+        <TextView android:textSize="@dimen/similar_photo_pick_header_text_size" android:textColor="@color/similar_photo_pick_header_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/similar_keep_clear" android:layout_weight="1.0" android:textDirection="locale" />
+        <miui.widget.SlidingButton android:id="@id/keep_clear_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView android:id="@id/grid" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/Gallery.Widget.GridView.SimilarPhotoPick" />
+    <FrameLayout android:background="@drawable/cleaner_button_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/delete" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/cleaner_pick_action_button_margin" android:text="@string/cleaner_photo_pick_delete_selected" style="@style/Gallery.Widget.Button.Warning" />
+    </FrameLayout>
+</LinearLayout>

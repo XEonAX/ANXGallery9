@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/recent" android:layout_width="@dimen/editor_menu_sticker_recent_width" android:layout_height="@dimen/editor_menu_sticker_recent_height" android:src="@drawable/sticker_button_history" android:scaleType="centerCrop" android:contentDescription="@string/photo_editor_talkback_recently" android:layout_marginStart="@dimen/editor_menu_sticker_recent_start" android:layout_marginEnd="@dimen/editor_menu_sticker_recent_end" />
+    <View android:layout_gravity="bottom" android:background="@drawable/sticker_category_recent_divider" android:layout_width="@dimen/editor_menu_sticker_head_line_width" android:layout_height="@dimen/editor_menu_sticker_head_line_height" android:layout_marginBottom="@dimen/editor_menu_sticker_head_line_margin_bottom" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.miui.gallery.ui.SimpleRecyclerView android:id="@id/category" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

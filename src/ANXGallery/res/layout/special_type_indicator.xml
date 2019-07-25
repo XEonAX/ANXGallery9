@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/special_type_indicator_size" android:textColor="@color/special_type_indicator_text" android:background="@drawable/special_type_indicator_bg" android:paddingTop="@dimen/special_type_indicator_top_bottom_padding" android:paddingBottom="@dimen/special_type_indicator_top_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:paddingStart="@dimen/special_type_indicator_left_right_padding" android:paddingEnd="@dimen/special_type_indicator_left_right_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

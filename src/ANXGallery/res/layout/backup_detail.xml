@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.gallery.widget.TwoStageDrawer android:background="@drawable/window_background" android:layout_width="fill_parent" android:layout_height="fill_parent" drawer:tsdDragEnabled="true" drawer:tsdPrimaryContentView="@id/backup_bar" drawer:tsdScrollableView="@id/grid" drawer:tsdTargetView="@id/grid"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:drawer="http://schemas.android.com/apk/res-auto">
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView android:id="@id/grid" android:background="@color/panel_bar_background" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Gallery.Widget.GridView.ThumbNail" />
+    <TextView android:gravity="center" android:id="@android:id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/backup_detail_page_empty" style="@style/Gallery.TextAppearance.BlankPage" />
+    <LinearLayout android:orientation="vertical" android:id="@id/backup_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.miui.gallery.widget.TwoStageDrawer>

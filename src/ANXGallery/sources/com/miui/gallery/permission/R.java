@@ -1,0 +1,225 @@
+package com.miui.gallery.permission;
+
+public final class R {
+
+    public static final class dimen {
+        public static final int agreement_action_margin = 2131099662;
+        public static final int agreement_action_padding_horizontal = 2131099663;
+        public static final int agreement_action_padding_vertical = 2131099664;
+        public static final int agreement_action_text_size = 2131099665;
+        public static final int agreement_app_icon_margin_top = 2131099666;
+        public static final int agreement_item_arrow_padding = 2131099667;
+        public static final int agreement_item_height = 2131099668;
+        public static final int agreement_item_padding_end = 2131099669;
+        public static final int agreement_item_padding_start = 2131099670;
+        public static final int agreement_list_margin_bottom = 2131099671;
+        public static final int agreement_list_margin_top = 2131099672;
+        public static final int agreement_quit_margin_right = 2131099673;
+        public static final int agreement_quit_margin_top = 2131099674;
+        public static final int agreement_section_divider_height = 2131099675;
+        public static final int agreement_summary_margin_top = 2131099676;
+        public static final int agreement_summary_text_size = 2131099677;
+        public static final int compat_button_inset_horizontal_material = 2131099870;
+        public static final int compat_button_inset_vertical_material = 2131099871;
+        public static final int compat_button_padding_horizontal_material = 2131099872;
+        public static final int compat_button_padding_vertical_material = 2131099873;
+        public static final int compat_control_corner_material = 2131099874;
+        public static final int divider_line_height = 2131099931;
+        public static final int fastscroll_default_thickness = 2131100220;
+        public static final int fastscroll_margin = 2131100221;
+        public static final int fastscroll_minimum_range = 2131100222;
+        public static final int item_touch_helper_max_drag_scroll_per_frame = 2131100290;
+        public static final int item_touch_helper_swipe_escape_max_velocity = 2131100291;
+        public static final int item_touch_helper_swipe_escape_velocity = 2131100292;
+        public static final int miui_list_view_item_safe_padding_top_bottom = 2131100336;
+        public static final int notification_action_icon_size = 2131100401;
+        public static final int notification_action_text_size = 2131100402;
+        public static final int notification_big_circle_margin = 2131100403;
+        public static final int notification_content_margin_start = 2131100404;
+        public static final int notification_large_icon_height = 2131100405;
+        public static final int notification_large_icon_width = 2131100406;
+        public static final int notification_main_column_padding_top = 2131100407;
+        public static final int notification_media_narrow_margin = 2131100408;
+        public static final int notification_right_icon_size = 2131100409;
+        public static final int notification_right_side_padding_top = 2131100410;
+        public static final int notification_small_icon_background_padding = 2131100411;
+        public static final int notification_small_icon_size_as_large = 2131100412;
+        public static final int notification_subtext_size = 2131100413;
+        public static final int notification_top_pad = 2131100414;
+        public static final int notification_top_pad_large_text = 2131100415;
+        public static final int permission_category_item_height = 2131100456;
+    }
+
+    public static final class drawable {
+        public static final int editor_download = 2131165434;
+        public static final int editor_downloaded = 2131165435;
+        public static final int editor_downloading = 2131165436;
+        public static final int item_divider_bg = 2131165603;
+        public static final int notification_action_background = 2131165665;
+        public static final int notification_bg = 2131165666;
+        public static final int notification_bg_low = 2131165667;
+        public static final int notification_bg_low_normal = 2131165668;
+        public static final int notification_bg_low_pressed = 2131165669;
+        public static final int notification_bg_normal = 2131165670;
+        public static final int notification_bg_normal_pressed = 2131165671;
+        public static final int notification_icon_background = 2131165672;
+        public static final int notification_template_icon_bg = 2131165673;
+        public static final int notification_template_icon_low_bg = 2131165674;
+        public static final int notification_tile_bg = 2131165675;
+        public static final int notify_panel_notification_icon_bg = 2131165676;
+        public static final int section_divider_bg = 2131165781;
+    }
+
+    public static final class id {
+        public static final int action = 2131296256;
+        public static final int action0 = 2131296257;
+        public static final int action_container = 2131296264;
+        public static final int action_divider = 2131296267;
+        public static final int action_image = 2131296273;
+        public static final int action_text = 2131296291;
+        public static final int actions = 2131296292;
+        public static final int app_icon = 2131296329;
+        public static final int async = 2131296333;
+        public static final int blocking = 2131296353;
+        public static final int bottom = 2131296355;
+        public static final int cancel_action = 2131296372;
+        public static final int category = 2131296374;
+        public static final int checkbox = 2131296388;
+        public static final int chronometer = 2131296397;
+        public static final int desc = 2131296461;
+        public static final int editor_adjust = 2131296496;
+        public static final int editor_audio = 2131296497;
+        public static final int editor_filter = 2131296498;
+        public static final int editor_itemIndex = 2131296499;
+        public static final int editor_more = 2131296500;
+        public static final int editor_nav = 2131296501;
+        public static final int editor_smart_effect = 2131296503;
+        public static final int editor_trim = 2131296504;
+        public static final int editor_viewHolder = 2131296506;
+        public static final int editor_water_mark = 2131296507;
+        public static final int end = 2131296513;
+        public static final int end_padder = 2131296514;
+        public static final int forever = 2131296574;
+        public static final int icon = 2131296618;
+        public static final int icon_group = 2131296620;
+        public static final int info = 2131296633;
+        public static final int italic = 2131296644;
+        public static final int item_touch_helper_previous_elevation = 2131296653;
+        public static final int left = 2131296671;
+        public static final int line1 = 2131296674;
+        public static final int line3 = 2131296675;
+        public static final int list = 2131296684;
+        public static final int media_actions = 2131296701;
+        public static final int none = 2131296751;
+        public static final int normal = 2131296752;
+        public static final int notification_background = 2131296756;
+        public static final int notification_main_column = 2131296757;
+        public static final int notification_main_column_container = 2131296758;
+        public static final int quit = 2131296838;
+        public static final int right = 2131296874;
+        public static final int right_icon = 2131296876;
+        public static final int right_side = 2131296877;
+        public static final int screenshot_navigator_tag_id = 2131296896;
+        public static final int seekbar_thumb_active_state = 2131296914;
+        public static final int seekbar_thumb_reset_state = 2131296915;
+        public static final int start = 2131296951;
+        public static final int status_bar_latest_event_content = 2131296952;
+        public static final int summary = 2131296963;
+        public static final int tag_transition_group = 2131296980;
+        public static final int text = 2131296982;
+        public static final int text2 = 2131296983;
+        public static final int time = 2131297004;
+        public static final int title = 2131297018;
+        public static final int top = 2131297023;
+    }
+
+    public static final class layout {
+        public static final int notification_action = 2131427535;
+        public static final int notification_action_tombstone = 2131427536;
+        public static final int notification_media_action = 2131427537;
+        public static final int notification_media_cancel_action = 2131427538;
+        public static final int notification_template_big_media = 2131427539;
+        public static final int notification_template_big_media_custom = 2131427540;
+        public static final int notification_template_big_media_narrow = 2131427541;
+        public static final int notification_template_big_media_narrow_custom = 2131427542;
+        public static final int notification_template_custom_big = 2131427543;
+        public static final int notification_template_icon_group = 2131427544;
+        public static final int notification_template_lines_media = 2131427545;
+        public static final int notification_template_media = 2131427546;
+        public static final int notification_template_media_custom = 2131427547;
+        public static final int notification_template_part_chronometer = 2131427548;
+        public static final int notification_template_part_time = 2131427549;
+        public static final int permission_denied_activity = 2131427565;
+        public static final int user_agreement = 2131427704;
+        public static final int user_agreement_item = 2131427705;
+        public static final int user_permission_category = 2131427706;
+        public static final int user_permission_item = 2131427707;
+    }
+
+    public static final class string {
+        public static final int agreement_agree = 2131755040;
+        public static final int agreement_optional_tip = 2131755041;
+        public static final int agreement_quit = 2131755042;
+        public static final int agreement_required_tip = 2131755043;
+        public static final int agreement_summary = 2131755044;
+        public static final int base_btn_cancel = 2131755199;
+        public static final int base_btn_download = 2131755200;
+        public static final int do_not_remind_me = 2131755789;
+        public static final int grant_permission_go_and_set = 2131756039;
+        public static final int grant_permission_item = 2131756040;
+        public static final int grant_permission_text = 2131756041;
+        public static final int grant_permission_title = 2131756042;
+        public static final int grant_permission_unlock_and_set = 2131756043;
+        public static final int have_known = 2131756045;
+        public static final int permissin_contract_desc = 2131756293;
+        public static final int permission_contract_name = 2131756294;
+        public static final int permission_optional_category = 2131756295;
+        public static final int permission_phone_desc = 2131756296;
+        public static final int permission_phone_name = 2131756297;
+        public static final int permission_require_category = 2131756298;
+        public static final int permission_storage_desc = 2131756299;
+        public static final int permission_storage_name = 2131756300;
+        public static final int permission_use_desc = 2131756301;
+        public static final int privacy_permission_request_message = 2131756455;
+        public static final int privacy_permission_request_negative = 2131756456;
+        public static final int privacy_permission_request_positive = 2131756457;
+        public static final int privacy_permission_request_title = 2131756458;
+        public static final int select_all = 2131756630;
+        public static final int status_bar_notification_info_overflow = 2131756695;
+        public static final int storage_description_primary = 2131756712;
+        public static final int storage_description_sdcard = 2131756713;
+        public static final int storage_description_usb = 2131756714;
+        public static final int storage_description_xspace = 2131756715;
+        public static final int today = 2131756788;
+        public static final int user_agree = 2131756804;
+        public static final int user_agreement2 = 2131756805;
+        public static final int user_agreement4 = 2131756806;
+        public static final int user_notice_identify_summary_format = 2131756808;
+        public static final int user_notice_title = 2131756809;
+        public static final int yesterday = 2131756935;
+    }
+
+    public static final class style {
+        public static final int TextAppearance_Agreement = 2131820730;
+        public static final int TextAppearance_Compat_Notification = 2131820731;
+        public static final int TextAppearance_Compat_Notification_Info = 2131820732;
+        public static final int TextAppearance_Compat_Notification_Info_Media = 2131820733;
+        public static final int TextAppearance_Compat_Notification_Line2 = 2131820734;
+        public static final int TextAppearance_Compat_Notification_Line2_Media = 2131820735;
+        public static final int TextAppearance_Compat_Notification_Media = 2131820736;
+        public static final int TextAppearance_Compat_Notification_Time = 2131820737;
+        public static final int TextAppearance_Compat_Notification_Time_Media = 2131820738;
+        public static final int TextAppearance_Compat_Notification_Title = 2131820739;
+        public static final int TextAppearance_Compat_Notification_Title_Media = 2131820740;
+        public static final int TextAppearance_PreferenceCategory = 2131820742;
+        public static final int TextAppearance_PreferenceList = 2131820743;
+        public static final int TextAppearance_Widget_List_Secondary = 2131820745;
+        public static final int Widget_Agreement_Item_DoubleLine = 2131820760;
+        public static final int Widget_Agreement_Item_SingleLine = 2131820761;
+        public static final int Widget_Button_Warning = 2131820762;
+        public static final int Widget_Compat_NotificationActionContainer = 2131820763;
+        public static final int Widget_Compat_NotificationActionText = 2131820764;
+        public static final int Widget_CompoundButton_CheckBox = 2131820765;
+        public static final int Widget_Support_CoordinatorLayout = 2131820769;
+    }
+}

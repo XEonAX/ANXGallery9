@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.gallery.editor.photo.app.doodle.DoodlePaintView android:layout_gravity="bottom" android:id="@id/doodle_paint_select" android:layout_width="@dimen/editor_menu_doodle_content_item_width" android:layout_height="@dimen/editor_menu_doodle_content_item_width" android:layout_marginStart="@dimen/editor_menu_doodle_paint_view_margin_start" />
+    <View android:layout_gravity="bottom" android:background="@color/photo_editor_line_bg" android:layout_width="@dimen/editor_menu_doodle_line_width" android:layout_height="@dimen/editor_menu_doodle_line_height" android:layout_marginBottom="@dimen/editor_menu_doodle_line_margin_bottom" android:layout_marginStart="@dimen/editor_menu_doodle_line_margin_start" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/menu_parent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.miui.gallery.ui.SimpleRecyclerView android:layout_gravity="bottom" android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

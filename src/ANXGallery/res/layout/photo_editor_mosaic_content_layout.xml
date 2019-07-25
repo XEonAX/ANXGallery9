@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/editor_menu_mosaic_item_start"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="@dimen/editor_menu_mosaic_item_width" android:layout_height="@dimen/editor_menu_mosaic_item_width">
+        <ImageView android:id="@id/eraser" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/photo_editor_talkback_eraser" />
+        <ImageView android:id="@id/eraser_background" android:background="@drawable/selector_mosaic_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/photo_editor_talkback_eraser" />
+    </FrameLayout>
+    <View android:layout_width="@dimen/editor_menu_mosaic_item_start" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.miui.gallery.ui.SimpleRecyclerView android:id="@id/preview_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>
