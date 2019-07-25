@@ -1,0 +1,1 @@
+java  -jar ..\ANXMiuiPortTools\apktool.jar d -p ..\ANXMiuiPortTools\MiuiFrameworks -f -b -o .\src\ANXGallery .\orig\MiuiGallery.apk

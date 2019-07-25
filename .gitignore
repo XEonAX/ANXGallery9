@@ -1,0 +1,8 @@
+src/ANXGallery/build/
+out/
+.idea
+src/ANXGalleryMagisk/system/priv-app/ANXGallery/ANXGallery.apk
+src/ANXGalleryUnity/system/priv-app/ANXGallery/ANXGallery.apk
+src/ANXMiuiGalleryMagisk/system/priv-app/MiuiGallery/MiuiGallery.apk
+LiveShare.txt
+src/ANXGalleryX/

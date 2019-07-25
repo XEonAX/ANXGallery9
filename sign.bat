@@ -1,0 +1,2 @@
+java  -jar ..\ANXMiuiPortTools\signapk.jar ..\ANXMiuiPortTools\testkey.x509.pem ..\ANXMiuiPortTools\testkey.pk8 .\out\ANXGallery-Unsigned.apk .\out\ANXGallery-Unaligned.apk
+..\ANXMiuiPortTools\zipalign.exe -f 4  .\out\ANXGallery-Unaligned.apk .\out\ANXGallery.apk
